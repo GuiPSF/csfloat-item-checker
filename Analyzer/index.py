@@ -14,11 +14,7 @@ response = requests.get(
 payload = response.json()
 items = payload["data"]
 
-items[0]
-
-
 df = pd.json_normalize(items, sep="_")
-df.info()
 
 x = input("Test: ")
 
